@@ -18,7 +18,6 @@ export default function Home() {
           alt="jessica"
           width={88}
           height={88}
-          priority
         />
 
         <div className={styles.cardHead}>
