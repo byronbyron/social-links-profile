@@ -1,11 +1,17 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-        
-      <div className={styles.card}>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className={styles.card}
+      >
         <Image
           className={styles.avatar}
           src="/images/avatar-jessica.jpeg"
@@ -29,7 +35,7 @@ export default function Home() {
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Instagram</a></li>
         </ul>
-      </div>
+      </motion.div>
     </main>
   );
 }
