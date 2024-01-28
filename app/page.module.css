@@ -12,7 +12,7 @@
   background-color: var(--dark-grey);
   text-align: center;
   width: 100%;
-  max-width: 380px;
+  max-width: 382px;
 }
 
 .avatar {
@@ -39,7 +39,7 @@
 
 .quote {
   font-size: 0.875rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.625rem;
 }
 
 .links {
@@ -67,4 +67,10 @@
 .links a:focus {
   background-color: var(--green);
   color: var(--off-black);
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 2.5rem;
+  }
 }
